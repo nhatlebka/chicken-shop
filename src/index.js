@@ -1,12 +1,12 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-//const morgan = require('morgan');
+const morgan = require('morgan');
 const port = process.env.PORT || 3000;
 const route = require('./routes');
 
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use(morgan('combined'));
+app.use(morgan('combined'));
 
 //Template engine EJS
 app.set('view engine', 'ejs');

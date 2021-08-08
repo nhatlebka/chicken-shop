@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const port = 3000;
-const route = require('./routes')
+const route = require('./routes');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('combined'));
@@ -12,11 +12,8 @@ app.use(morgan('combined'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
+route(app);
 
-
-
-route(app)
-
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Example app listening at http://localhost:${port}`);
-})
+});

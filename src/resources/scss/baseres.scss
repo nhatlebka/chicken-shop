@@ -1,0 +1,89 @@
+// Desktop
+@media (min-width: 1024px) and (max-width: 1449px) {
+    .nav-drop-down-menu {
+        max-width: 1024px;
+    }
+    .collection-menu {
+        left: -260px;
+    }
+    .shop-menu {
+        left: -410px;
+    }
+    .snack-menu {
+        left: -510px;
+    }
+    .crispy-menu {
+        left: -607px;
+    }
+    .baked-menu {
+        left: -718px;
+    }
+}
+
+
+/* Tablet  and mobile*/
+
+@media (max-width: 1023px) {
+    .header,
+    .header-main {
+        height: 70px;
+    }
+    .header,
+    .head {
+        padding: 0 10px;
+    }
+    .header-logo img {
+        height: 50px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .menu-mobile-list {
+        display: block;
+    }
+    .modal-search-input {
+        font-size: 4rem;
+        padding: 10px;
+    }
+    .modal-search-submit {
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+    .nav-cart-info {
+        width: 300px;
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .head-item-icon a,
+    .head-contact {
+        font-size: 1.2rem;
+    }
+    .head-item-icon a {
+        margin-right: 7px;
+    }
+    .margin-header {
+        padding-top: 106px;
+    }
+    .footer-nav-list a {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    .footer-nav-list:last-child a {
+        margin-right: 0;
+    }
+    .footer-title {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {}

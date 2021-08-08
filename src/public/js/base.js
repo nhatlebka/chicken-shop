@@ -13,21 +13,6 @@ modalClose.click(function() {
     modalClose.css('display', 'none');
 });
 
-//Modal Overplay
-var modalOverplay = $('.modal-overplay');
-var overplayMain = $('.modal-overplay-main');
-var overplayClose = $('.modal-overplay-close');
-
-modalOverplay.click(function() {
-    modalOverplay.css('display', 'none');
-});
-overplayClose.click(function() {
-    modalOverplay.css('display', 'none');
-});
-
-overplayMain.click(function(e) {
-    e.stopPropagation();
-});
 
 //Mobile Overplay
 var mobileOverplay = $('.modal-overplay-mobile');
